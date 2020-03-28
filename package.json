@@ -1,0 +1,35 @@
+{
+  "name": "expressjs-typescript-starter",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV=production tsc",
+    "lint": "eslint --fix src/**/*.{ts,js}",
+    "start": "NODE_ENV=development ts-node-dev src/index.ts",
+    "start:prod": "NODE_ENV=production node dist/index.js",
+    "test": "NODE_ENV=test npm run jest src --coverage",
+    "verify": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "@types/source-map-support": "^0.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.14.3",
+    "ts-node-dev": "^1.0.0-pre.39",
+    "typescript": "^3.4.5"
+  }
+}
