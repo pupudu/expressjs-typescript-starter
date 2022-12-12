@@ -14,7 +14,7 @@
     "verify": "tsc --noEmit"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
